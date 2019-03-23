@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E6D8F0F0-56EE-4F1B-A2E0-F3A52CF192D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutomaticBookingSystem</RootNamespace>
+    <AssemblyName>AutomaticBookingSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addGuest.Designer.cs">
+      <DependentUpon>addGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="automaticBookingSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>automaticBookingSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="automaticBookingSystemDataSet1.cs">
+      <DependentUpon>automaticBookingSystemDataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="automaticBookingSystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>automaticBookingSystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booking.Designer.cs">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookingManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookingManage.Designer.cs">
+      <DependentUpon>bookingManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Class2.cs" />
+    <Compile Include="DataOperation.cs" />
+    <Compile Include="goingOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="goingOrder.Designer.cs">
+      <DependentUpon>goingOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="guestInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="guestInformation.Designer.cs">
+      <DependentUpon>guestInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lineManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lineManager.Designer.cs">
+      <DependentUpon>lineManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="music.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="question.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="question.Designer.cs">
+      <DependentUpon>question.cs</DependentUpon>
+    </Compile>
+    <Compile Include="regester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regester.Designer.cs">
+      <DependentUpon>regester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting.Designer.cs">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userManage.Designer.cs">
+      <DependentUpon>userManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userOrder.Designer.cs">
+      <DependentUpon>userOrder.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addGuest.resx">
+      <DependentUpon>addGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking.resx">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookingManage.resx">
+      <DependentUpon>bookingManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="goingOrder.resx">
+      <DependentUpon>goingOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="guestInformation.resx">
+      <DependentUpon>guestInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lineManager.resx">
+      <DependentUpon>lineManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="question.resx">
+      <DependentUpon>question.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="regester.resx">
+      <DependentUpon>regester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting.resx">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userManage.resx">
+      <DependentUpon>userManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userOrder.resx">
+      <DependentUpon>userOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="automaticBookingSystemDataSet.xsc">
+      <DependentUpon>automaticBookingSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="automaticBookingSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>automaticBookingSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="automaticBookingSystemDataSet.xss">
+      <DependentUpon>automaticBookingSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="automaticBookingSystemDataSet1.xsc">
+      <DependentUpon>automaticBookingSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="automaticBookingSystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>automaticBookingSystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="automaticBookingSystemDataSet1.xss">
+      <DependentUpon>automaticBookingSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lblName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lblPwd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+    <Content Include="Resources\5.jpg" />
+    <Content Include="Resources\6.jpg" />
+    <None Include="Resources\background2.PNG" />
+    <Content Include="Resources\logo.jpg" />
+    <None Include="Resources\logo2.jpg" />
+    <None Include="Resources\logo1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
